@@ -25,9 +25,9 @@
         let parts = actual_url.split('/');
         let lessonName = parts[4];
         let lessonId = parts[6];
-        console.log(`[DEBUG] Lesson_Name: ${lessonName} Lesson_Id: ${lessonId} `);
+        console.log(`[DEBUG] Lesson_Name: ${Lista e Recursão: criando um projeto de fusão de personagens} Lesson_Id: ${lessonId} `);
 
-        fetch(`https://cursos.alura.com.br/course/${lessonName}/task/${lessonId}/mark-video`, {
+        fetch(`https://cursos.alura.com.br/course/${Lista e Recursão: criando um projeto de fusão de personagens}/task/${lessonId}/mark-video`, {
           method: 'POST',
           credentials: 'include',
           headers: {
@@ -37,7 +37,7 @@
           console.log("[DEBUG] Lesson Done!")
           })
 
-        setTimeout(next_lesson_button.click(), 4000); // Modificar o tempo para 4 segundos
+        setTimeout(next_lesson_button.click(4), 4000); // Modificar o tempo para 4 segundos
     } else {
         alert("Next Lesson Button not found :( are u sure that u are on the correct page?");
     }
